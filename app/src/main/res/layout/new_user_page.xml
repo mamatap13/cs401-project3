@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/new_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="New User"
+        android:textColor="#009688"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="357dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:hint="First Name:"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="351dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Last Name:"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/firstname"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/create_username"
+        android:layout_width="359dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Create Username"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/lastname"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/create_password"
+        android:layout_width="357dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/create_username"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/button_save_profile"
+        android:layout_width="198dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="80dp"
+        android:text="Save Profile"
+        android:textStyle="bold"
+        app:backgroundTint="#009688"
+        app:layout_constraintTop_toBottomOf="@+id/create_password"
+        tools:layout_editor_absoluteX="95dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,16 +3,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="VaxDiscussions"
+        android:textColor="#00C2D4"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="99dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="My Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#009688"
+        app:iconTint="#F6F6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/button_discussion"
+        android:layout_width="272dp"
+        android:layout_height="53dp"
+        android:text="Vaccine Discussion"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:backgroundTint="#009688"
+        app:iconTint="#FAF6F6"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="456dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
