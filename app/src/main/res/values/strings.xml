@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VaxDiscussions</string>
+    <string name="button_label_myprofile">My Profile</string>
+    <string name="button_label_vacc_disc">Vaccine Discussions</string>
 </resources>
