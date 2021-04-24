@@ -1,19 +1,19 @@
 package com.example.vaxdiscussions;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class Discussion extends AppCompatActivity {
+public class DiscussionsList extends AppCompatActivity {
     EditText covid_19, childhood_vaccine,why_vaccine,side_effect,moderna_or_pfizer;
     Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.discussion_page);
+        setContentView(R.layout.discussions_list);
 
         covid_19 = findViewById(R.id.covid);
         childhood_vaccine = findViewById(R.id.childhood_vaccines);
@@ -30,3 +30,4 @@ public class Discussion extends AppCompatActivity {
         });
     }
 }
+

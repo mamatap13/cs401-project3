@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".DiscussionsList">
+
+
+    <EditText
+        android:id="@+id/covid"
+        android:layout_width="392dp"
+        android:layout_height="73dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Covid-19"
+        android:textColor="#0C0C0C"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <EditText
+    android:id="@+id/childhood_vaccines"
+    android:layout_width="392dp"
+    android:layout_height="76dp"
+    android:layout_marginTop="16dp"
+    android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Childhood Vaccines"
+    app:layout_constraintTop_toBottomOf="@+id/covid"
+    tools:layout_editor_absoluteX="12dp" />
+
+<EditText
+    android:id="@+id/topic_vaccine"
+    android:layout_width="384dp"
+    android:layout_height="73dp"
+    android:layout_marginTop="16dp"
+    android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Why I should take the Covid Vaccine"
+    app:layout_constraintTop_toBottomOf="@+id/childhood_vaccines"
+    tools:layout_editor_absoluteX="16dp" />
+
+<EditText
+    android:id="@+id/side_effect_stories"
+    android:layout_width="375dp"
+    android:layout_height="71dp"
+    android:layout_marginTop="21dp"
+    android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Side Effects Stories"
+    app:layout_constraintTop_toBottomOf="@+id/topic_vaccine"
+    tools:layout_editor_absoluteX="21dp" />
+
+<Button
+    android:id="@+id/button_main_login"
+    android:layout_width="278dp"
+    android:layout_height="71dp"
+    android:layout_marginTop="148dp"
+    android:text="Login to See Information"
+    android:textStyle="bold"
+    app:backgroundTint="#009688"
+    app:layout_constraintTop_toBottomOf="@+id/side_effect_stories"
+    tools:layout_editor_absoluteX="66dp" />
+
+<EditText
+    android:id="@+id/mode_or_pfiz"
+    android:layout_width="366dp"
+    android:layout_height="64dp"
+    android:layout_marginTop="24dp"
+    android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Moderna better than Pfizer?"
+    app:layout_constraintTop_toBottomOf="@+id/side_effect_stories"
+    tools:layout_editor_absoluteX="21dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

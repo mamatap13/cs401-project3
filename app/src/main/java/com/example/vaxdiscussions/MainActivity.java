@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginMenu.class);
         startActivity(intent);
     }
+
+    public void launchDiscussionsList(View view) {
+        Intent intent = new Intent(this, DiscussionsList.class);
+        startActivity(intent);
+    }
 }

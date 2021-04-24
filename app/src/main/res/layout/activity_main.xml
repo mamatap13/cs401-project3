@@ -53,6 +53,7 @@
         android:layout_marginRight="50dp"
         android:layout_marginBottom="368dp"
         android:text="@string/button_label_vacc_disc"
+        android:onClick="launchDiscussionsList"
         app:backgroundTint="#009688"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
