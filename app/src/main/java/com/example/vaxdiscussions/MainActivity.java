@@ -2,6 +2,7 @@ package com.example.vaxdiscussions;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -19,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_page);
-
+        setContentView(R.layout.activity_main);
+/*
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         btnLogin = findViewById(R.id.button_login);
@@ -50,7 +51,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+*/
 
+    }
 
+    public void launchProfileMenu(View view) {
+        Intent intent = new Intent(this, LoginMenu.class);
+        startActivity(intent);
     }
 }
