@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VaxDiscussions">
         <activity
+            android:name=".ProfileMenu"
+            android:label="Welcome Page">
+        </activity>
+        <activity
             android:name=".DiscussionsList"
             android:label="Discussions"
             android:parentActivityName=".MainActivity">
