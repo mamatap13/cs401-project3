@@ -25,6 +25,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.vaxdiscussions.MainActivity" />
         </activity>
+        <activity
+            android:name=".NewUser"
+            android:label="Create New User"
+            android:parentActivityName=".LoginMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaxdiscussions.LoginMenu" />
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

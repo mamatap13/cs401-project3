@@ -2,6 +2,7 @@ package com.example.vaxdiscussions;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginMenu extends AppCompatActivity {
+
+    Button createNewUser;
 
     EditText username, password;
     Button btnLogin;
@@ -24,6 +27,12 @@ public class LoginMenu extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         btnLogin = findViewById(R.id.button_login);
+
+        createNewUser = findViewById(R.id.button_create_user);
+        createNewUser.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginMenu.this, NewUser.class);
+            startActivity(intent);
+        });
 
 
         btnLogin.setOnClickListener(new View.OnClickListener() {

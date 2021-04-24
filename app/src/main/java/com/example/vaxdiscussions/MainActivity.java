@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        profileMenu = (Button) findViewById(R.id.button_profile_login);
-        discussionlist = (Button) findViewById(R.id.button_discussion_menu);
+        profileMenu = findViewById(R.id.button_profile_login);
+        discussionlist = findViewById(R.id.button_discussion_menu);
 
 
         profileMenu.setOnClickListener(v -> {

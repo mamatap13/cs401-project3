@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class profile extends AppCompatActivity {
+public class NewUser extends AppCompatActivity {
     EditText fname,lname,username,password;
     Button save_profile;
     @Override
@@ -15,8 +15,8 @@ public class profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_user_page);
 
-        fname = findViewById(R.id.firstname);
-        lname = findViewById(R.id.lastname);
+        fname = findViewById(R.id.edittext_firstname);
+        lname = findViewById(R.id.edittext_lastname);
         username = findViewById(R.id.create_username);
         password = findViewById(R.id.create_password);
 
