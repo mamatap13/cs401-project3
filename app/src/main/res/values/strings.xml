@@ -3,4 +3,7 @@
     <string name="button_label_myprofile">My Profile</string>
     <string name="button_label_vacc_disc">Vaccine Discussions</string>
     <string name="login_page_name">Login Menu</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="button_label_login">Login</string>
 </resources>
