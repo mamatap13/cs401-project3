@@ -6,4 +6,10 @@
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="button_label_login">Login</string>
+    <string name="disc_label_covid">Covid-19</string>
+    <string name="disc_label_childhood">Childhood Vaccines</string>
+    <string name="disc_label_why_vaccine">Why I should take the Covid Vaccine</string>
+    <string name="disc_label_side_effects">Side Effects Stories</string>
+    <string name="button_label_login_to_see">Login to See Information</string>
+    <string name="disc_label_better_vaccine">Moderna better than Pfizer?</string>
 </resources>

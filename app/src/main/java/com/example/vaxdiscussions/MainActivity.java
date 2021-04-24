@@ -12,22 +12,28 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Button profileMenu, discussionlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        profileMenu = (Button) findViewById(R.id.button_profile_login);
+        discussionlist = (Button) findViewById(R.id.button_discussion_menu);
+
+
+        profileMenu.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, LoginMenu.class);
+            startActivity(intent);
+        });
+
+
+        discussionlist.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, DiscussionsList.class);
+            startActivity(intent);
+        });
+
     }
 
-    public void launchProfileMenu(View view) {
-        Intent intent = new Intent(this, LoginMenu.class);
-        startActivity(intent);
-    }
-
-    public void launchDiscussionsList(View view) {
-        Intent intent = new Intent(this, DiscussionsList.class);
-        startActivity(intent);
-    }
 }
