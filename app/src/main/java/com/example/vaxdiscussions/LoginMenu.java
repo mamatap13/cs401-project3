@@ -10,21 +10,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class LoginMenu extends AppCompatActivity {
 
     Button createNewUser;
 
-    EditText username, password;
+    EditText email, password;
     Button btnLogin;
     String correct_username = "admin";
     String correct_password = "Pass@12";
+    private FirebaseAuth mAuth;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_menu);
-
-        username = findViewById(R.id.username);
+        mAuth = FirebaseAuth.getInstance();
+        email = findViewById(R.id.username);
         password = findViewById(R.id.password);
         btnLogin = findViewById(R.id.button_login);
 
@@ -39,10 +47,10 @@ public class LoginMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //validate inputs
-                if(TextUtils.isEmpty(username.getText().toString() )|| TextUtils.isEmpty(password.getText().toString())) {
+                if(TextUtils.isEmpty(email.getText().toString() )|| TextUtils.isEmpty(password.getText().toString())) {
                     Toast.makeText(LoginMenu.this,"Empty data provided",Toast.LENGTH_LONG).show();
                 }
-                else if(username.getText().toString().equals(correct_username)){
+                else if(email.getText().toString().equals(correct_username)){
                     //Check password
                     if(password.getText().toString().equals(correct_password))
                     {
@@ -55,6 +63,13 @@ public class LoginMenu extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(LoginMenu.this,"Invalid Username/Password",Toast.LENGTH_LONG).show();
+                    mAuth.signInWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                        @Override
+                        public void onSuccess(AuthResult authResult) {
+                            Intent intent = new Intent(LoginMenu.this, ProfileMenu.class);
+                            startActivity(intent);
+                        }
+                    });
                 }
             }
         });

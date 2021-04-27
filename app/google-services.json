@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146906231302",
+    "project_id": "vaxdiscussions",
+    "storage_bucket": "vaxdiscussions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146906231302:android:8e96938dc453c1565b8987",
+        "android_client_info": {
+          "package_name": "com.example.vaxdiscussions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146906231302-7ocu2tbc3hbkcf5p14bcss6d97rvn119.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWbZ5zNcdhL0iOUVHsiqCRxsXs7Vrhm7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146906231302-7ocu2tbc3hbkcf5p14bcss6d97rvn119.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
