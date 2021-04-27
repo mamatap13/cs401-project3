@@ -12,4 +12,7 @@
     <string name="disc_label_side_effects">Side Effects Stories</string>
     <string name="button_label_login_to_see">Login to See Information</string>
     <string name="disc_label_better_vaccine">Moderna better than Pfizer?</string>
+    <string name="label_welcome">Welcome to VaxDiscussions</string>
+    <string name="button_label_card">My Digital Immunization Card</string>
+    <string name="button_label_settings">Settings</string>
 </resources>

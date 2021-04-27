@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VaxDiscussions">
+        <activity android:name=".SettingsMenu"
+            android:label="Settings"
+            android:parentActivityName=".LoginMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaxdiscussions.LoginMenu" />
+        </activity>
         <activity
             android:name=".ProfileMenu"
-            android:label="Welcome Page">
-        </activity>
+            android:label="Welcome Page"></activity>
         <activity
             android:name=".DiscussionsList"
             android:label="Discussions"
