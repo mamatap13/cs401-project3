@@ -8,19 +8,22 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button profileMenu, discussionlist;
+    Button profileMenu, discussionlist, settingsMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         profileMenu = findViewById(R.id.button_profile_login);
         discussionlist = findViewById(R.id.button_discussion_menu);
+        settingsMenu = findViewById(R.id.button_label_settings);
 
 
         profileMenu.setOnClickListener(v -> {
@@ -34,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        settingsMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opensettingsmenu();
+            }
+        });
+    }
+    public void opensettingsmenu(){
+        Intent intent = new Intent(this,SettingsMenu.class);
+        startActivity(intent);
     }
 
 }
