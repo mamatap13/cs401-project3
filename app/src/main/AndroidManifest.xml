@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VaxDiscussions">
-        <activity android:name=".Discussions_after_login"></activity>
+        <activity android:name=".CovidDiscussions"></activity>
+        <activity android:name=".Discussions_after_login" />
         <activity android:name=".Diphtheria" />
         <activity android:name=".HepatitisA" />
         <activity android:name=".Influenza" />
