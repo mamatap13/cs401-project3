@@ -1,8 +1,11 @@
-package com.example.vaxdiscussions;
+package com.example.vaxdiscussions.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.vaxdiscussions.R;
+
 /*
 User can enter the settings menu.
  */

@@ -1,21 +1,26 @@
-package com.example.vaxdiscussions;
+package com.example.vaxdiscussions.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.vaxdiscussions.vaccines.Chickenpox;
+import com.example.vaxdiscussions.vaccines.Diphtheria;
+import com.example.vaxdiscussions.vaccines.HepatitisA;
+import com.example.vaxdiscussions.vaccines.HepatitisB;
+import com.example.vaxdiscussions.vaccines.Influenza;
+import com.example.vaxdiscussions.R;
+import com.example.vaxdiscussions.vaccines.measles;
+import com.example.vaxdiscussions.vaccines.smallPox;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 
 public class Vaccine_info extends AppCompatActivity {
     TextView fullName,vacc_covid,vacc_flu,vac_meas,vac_small,vacc_chicken,vacc_hepaB,vacc_hepaA,vacc_diph;

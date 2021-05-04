@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Discussions_after_login">
+    tools:context=".activities.Discussions_after_login">
     <EditText
         android:id="@+id/disc_covid"
         android:layout_width="0dp"

@@ -9,59 +9,59 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VaxDiscussions">
-        <activity android:name=".Reply_page"></activity>
-        <activity android:name=".CovidDiscussions" />
-        <activity android:name=".Discussions_after_login" />
-        <activity android:name=".Diphtheria" />
-        <activity android:name=".HepatitisA" />
-        <activity android:name=".Influenza" />
-        <activity android:name=".HepatitisB" />
-        <activity android:name=".measles" />
-        <activity android:name=".Chickenpox" />
-        <activity android:name=".smallPox" />
-        <activity android:name=".Vaccine_info" />
-        <activity android:name=".Vaccine_entry" />
+        <activity android:name=".activities.Reply_page"></activity>
+        <activity android:name=".activities.CovidDiscussions" />
+        <activity android:name=".activities.Discussions_after_login" />
+        <activity android:name=".vaccines.Diphtheria" />
+        <activity android:name=".vaccines.HepatitisA" />
+        <activity android:name=".vaccines.Influenza" />
+        <activity android:name=".vaccines.HepatitisB" />
+        <activity android:name=".vaccines.measles" />
+        <activity android:name=".vaccines.Chickenpox" />
+        <activity android:name=".vaccines.smallPox" />
+        <activity android:name=".activities.Vaccine_info" />
+        <activity android:name=".activities.Vaccine_entry" />
         <activity
-            android:name=".SettingsMenu"
+            android:name=".activities.SettingsMenu"
             android:label="Settings"
-            android:parentActivityName=".LoginMenu">
+            android:parentActivityName=".activities.LoginMenu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.vaxdiscussions.LoginMenu" />
+                android:value="com.example.vaxdiscussions.activities.LoginMenu" />
         </activity>
         <activity
-            android:name=".ProfileMenu"
+            android:name=".activities.ProfileMenu"
             android:label="Welcome Page"
-            android:parentActivityName=".ProfileMenu">
+            android:parentActivityName=".activities.ProfileMenu">
             <meta-data
                 android:name="androis.support.PARENT_ACTIVITY"
                 android:value="com.example.vaxdiscussions.VaccineInfo" />
         </activity>
         <activity
-            android:name=".DiscussionsList"
+            android:name=".activities.DiscussionsList"
             android:label="Discussions"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.vaxdiscussions.MainActivity" />
+                android:value="com.example.vaxdiscussions.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".LoginMenu"
+            android:name=".activities.LoginMenu"
             android:label="@string/login_page_name"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.vaxdiscussions.MainActivity" />
+                android:value="com.example.vaxdiscussions.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".NewUser"
+            android:name=".activities.NewUser"
             android:label="Create New User"
-            android:parentActivityName=".LoginMenu">
+            android:parentActivityName=".activities.LoginMenu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.vaxdiscussions.LoginMenu" />
+                android:value="com.example.vaxdiscussions.activities.LoginMenu" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,19 +1,19 @@
-package com.example.vaxdiscussions;
+package com.example.vaxdiscussions.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Switch;
-import android.widget.Toast;
 
+import com.example.vaxdiscussions.R;
+
+/**
+ * Main Activity with
+ */
 public class MainActivity extends AppCompatActivity {
 
-    Button profileMenu, discussionlist, settingsMenu;
+    Button profileMenu, discussionlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
         profileMenu = findViewById(R.id.button_profile_login);
         discussionlist = findViewById(R.id.button_discussion_menu);
-        settingsMenu = findViewById(R.id.button_label_settings);
 
 
         profileMenu.setOnClickListener(v -> {
@@ -39,9 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public void opensettingsmenu(){
-        Intent intent = new Intent(this,SettingsMenu.class);
-        startActivity(intent);
-    }
+
 
 }

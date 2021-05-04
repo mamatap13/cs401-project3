@@ -1,4 +1,4 @@
-package com.example.vaxdiscussions;
+package com.example.vaxdiscussions.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.vaxdiscussions.R;
 
 public class Discussions_after_login extends AppCompatActivity {
     EditText covid_19, childhood_vaccine,why_vaccine,side_effect,moderna_or_pfizer;

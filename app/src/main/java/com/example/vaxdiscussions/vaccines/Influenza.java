@@ -1,4 +1,4 @@
-package com.example.vaxdiscussions;
+package com.example.vaxdiscussions.vaccines;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.vaxdiscussions.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -74,7 +75,7 @@ public class Influenza extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Intent intent = new Intent(Influenza.this, Vaccine_info.class);
+                        Intent intent = new Intent(Influenza.this, com.example.vaxdiscussions.activities.Vaccine_info.class);
                         startActivity(intent);
 
                     }

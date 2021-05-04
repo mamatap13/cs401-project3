@@ -1,4 +1,4 @@
-package com.example.vaxdiscussions;
+package com.example.vaxdiscussions.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.vaxdiscussions.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 /*
 User is able to log into the system with the firebase Authorizations and setup a
 log in usrname and password.
