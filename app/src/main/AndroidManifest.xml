@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VaxDiscussions">
-        <activity android:name=".SettingsMenu"
+        <activity android:name=".Diphtheria"></activity>
+        <activity android:name=".HepatitisA" />
+        <activity android:name=".Influenza" />
+        <activity android:name=".HepatitisB" />
+        <activity android:name=".measles" />
+        <activity android:name=".Chickenpox" />
+        <activity android:name=".smallPox" />
+        <activity android:name=".Vaccine_info" />
+        <activity android:name=".Vaccine_entry" />
+        <activity
+            android:name=".SettingsMenu"
             android:label="Settings"
             android:parentActivityName=".LoginMenu">
             <meta-data
@@ -18,7 +28,12 @@
         </activity>
         <activity
             android:name=".ProfileMenu"
-            android:label="Welcome Page"></activity>
+            android:label="Welcome Page"
+            android:parentActivityName=".ProfileMenu">
+            <meta-data
+                android:name="androis.support.PARENT_ACTIVITY"
+                android:value="com.example.vaxdiscussions.VaccineInfo" />
+        </activity>
         <activity
             android:name=".DiscussionsList"
             android:label="Discussions"

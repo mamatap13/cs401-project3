@@ -7,6 +7,15 @@
     <string name="password_hint">Password</string>
     <string name="button_label_login">Login</string>
     <string name="disc_label_covid">Covid-19</string>
+    <string name="user_first_name">Full Name</string>
+    <string name="vaccine_name">Covid19</string>
+    <string name="vaccine_name1">Small Pox</string>
+    <string name="vaccine_name2">Influenza(Flu)</string>
+    <string name="vaccine_name3">Measles</string>
+    <string name="vaccine_name4">Hepatitis A</string>
+    <string name="vaccine_name5">Chickenpox</string>
+    <string name="vaccine_name6">Hepatitis B</string>
+    <string name="vaccine_name7">Diphtheria</string>
     <string name="disc_label_childhood">Childhood Vaccines</string>
     <string name="disc_label_why_vaccine">Why I should take the Covid Vaccine</string>
     <string name="disc_label_side_effects">Side Effects Stories</string>
