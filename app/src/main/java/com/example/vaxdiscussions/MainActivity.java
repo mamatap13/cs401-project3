@@ -37,12 +37,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        settingsMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opensettingsmenu();
-            }
-        });
+
     }
     public void opensettingsmenu(){
         Intent intent = new Intent(this,SettingsMenu.class);
