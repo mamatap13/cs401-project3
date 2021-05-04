@@ -28,6 +28,7 @@ public class Vaccine_info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vaccine_info);
+        //setting up the user ids' fpr the different kinds of vaccines
         fullName=findViewById(R.id.user_info);
         vacc_covid = findViewById(R.id.vaccine_info);
         vac_small =findViewById(R.id.vaccine_info2);
@@ -41,6 +42,7 @@ public class Vaccine_info extends AppCompatActivity {
         mfireStore = FirebaseFirestore.getInstance();
 
 
+        //The mfirestore would save the user first name and last name onto the Vaccine information page
         mfireStore.collection("userscollection").document(mAuth.getCurrentUser().getUid()).get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                                            @Override
@@ -52,6 +54,7 @@ public class Vaccine_info extends AppCompatActivity {
                                                fullName.setText(first_name + " " + last_name);
                                            }
         });
+        //The on Click listener to goto the vaccine entry page for covid-19 vaccine
         vacc_covid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +63,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for Influenza vaccine
         vacc_flu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +72,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for Measles vaccine
         vac_meas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +81,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for smallpox vaccine
         vac_small.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +90,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for chickenpox vaccine
         vacc_chicken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +99,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for Hepatitis B vaccine
         vacc_hepaB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,6 +108,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for Diaptheria vaccine
         vacc_diph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,6 +117,7 @@ public class Vaccine_info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //The on Click listener to goto the vaccine entry page for Hepatitis A vaccine
         vacc_hepaA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

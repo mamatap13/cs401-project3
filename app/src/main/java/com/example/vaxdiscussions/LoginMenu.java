@@ -14,6 +14,10 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+/*
+User is able to log into the system with the firebase Authorizations and setup a
+log in usrname and password.
+ */
 
 public class LoginMenu extends AppCompatActivity {
 
@@ -55,9 +59,6 @@ public class LoginMenu extends AppCompatActivity {
                     if(password.getText().toString().equals(correct_password))
                     {
                         Toast.makeText(LoginMenu.this,"Successfully Logged in!",Toast.LENGTH_LONG).show();
-                    }
-                    else{
-                        Toast.makeText(LoginMenu.this,"Invalid Username / Password",Toast.LENGTH_LONG).show();
                     }
                 }
                 else

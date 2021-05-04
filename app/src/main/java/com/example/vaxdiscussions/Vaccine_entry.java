@@ -19,18 +19,24 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+The Vaccine_entry class file is where the user will be able to enter the information
+on the vaccine such as the vaccine name, date, side effects, and other informations.
+
+ */
 public class Vaccine_entry extends AppCompatActivity {
     EditText vac_name, vac_date,vac_des,vac_side_eff,vac_other;
     Button save_vacc;
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth; //getting the authorized user
     private FirebaseFirestore mfireStore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vaccine_entry);
+        setContentView(R.layout.activity_vaccine_entry); //layout file
         mAuth = FirebaseAuth.getInstance();
         mfireStore = FirebaseFirestore.getInstance();
 
+        //Setting up the ids' from the layout page
         vac_name = findViewById(R.id.vaccine_name);
         vac_date = findViewById(R.id.recieved_date);
         vac_des = findViewById(R.id.vac_des);
@@ -42,13 +48,15 @@ public class Vaccine_entry extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 String VaccineName,VaccineDate,VaccineDesc,VaccineSide,VaccineOther;
-                DocumentSnapshot document = task.getResult();
+
+                DocumentSnapshot document = task.getResult(); //Set up for reading the inputs for the vaccine information
                 VaccineName = document.getString("Covid19");
                 VaccineDate =document.getString("CovidVaccineDate");
                 VaccineDesc =document.getString("CovidVaccineDescription");
                 VaccineSide =document.getString("CovidVaccineSideEffects");
                 VaccineOther =document.getString("CovidOther");
                 if(VaccineName != null && !VaccineName.isEmpty()) {
+                    //writting the vaccine info into the database or firestore
                     vac_name.setText(VaccineName);
                     vac_date.setText(VaccineDate);
                     vac_des.setText(VaccineDesc);
@@ -57,6 +65,9 @@ public class Vaccine_entry extends AppCompatActivity {
                 }
             }
         });
+        /*
+        The on click listener for save vacccine button to store the vaccine information onto the firestore under the usercollection
+         */
         save_vacc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

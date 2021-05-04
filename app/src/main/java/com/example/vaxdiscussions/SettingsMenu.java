@@ -3,7 +3,9 @@ package com.example.vaxdiscussions;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
+/*
+User can enter the settings menu.
+ */
 public class SettingsMenu extends AppCompatActivity {
 
     @Override

@@ -18,10 +18,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+The small pox class file is where the user is able to enter the information about small pox vaccine
+such as the vaccine name, date recieved, descriptions of the vaccine, and other information. All
+of the textfield information will be saved onto the database.
+ */
 public class smallPox extends AppCompatActivity {
 
-    EditText vac_name, vac_date,vac_des,vac_side_eff,vac_other;
+    EditText vac_name, vac_date,vac_des,vac_side_eff,vac_other; //
     Button save_vacc;
     private FirebaseAuth mAuth;
     private FirebaseFirestore mfireStore;
@@ -31,7 +35,7 @@ public class smallPox extends AppCompatActivity {
         setContentView(R.layout.activity_small_pox);
         mAuth = FirebaseAuth.getInstance();
         mfireStore = FirebaseFirestore.getInstance();
-
+        //Setting up the user ids' to the proper text fields
         vac_name = findViewById(R.id.small_pox);
         vac_date = findViewById(R.id.Small_pox_recieved_date);
         vac_des = findViewById(R.id.small_pox_vac_des);
@@ -58,6 +62,7 @@ public class smallPox extends AppCompatActivity {
                 }
             }
         });
+        //Saving the information about the vaccine onto the firebase
         save_vacc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
