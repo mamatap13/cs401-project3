@@ -9,11 +9,21 @@ import android.widget.Button;
 
 import com.example.vaxdiscussions.R;
 
+/**
+ * User's after login menu, allows user to navigate to digital immunization card, discussions, or settings
+ */
 public class ProfileMenu extends AppCompatActivity {
+    /**
+     * Class Attributes
+     */
         Button immunization;
         Button discussion, settings;
 
 
+    /**
+     * Sets 3 buttons on the profile menu: immunization card, discussions, and settings
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

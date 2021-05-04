@@ -10,10 +10,13 @@ import android.widget.Button;
 import com.example.vaxdiscussions.R;
 
 /**
- *
+ * Discussion page with comments from users, user can choose to reply
  */
 public class CovidDiscussions extends AppCompatActivity {
 
+    /**
+     * class attribute
+     */
     Button reply;
 
     @Override

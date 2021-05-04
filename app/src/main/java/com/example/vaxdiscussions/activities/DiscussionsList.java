@@ -8,8 +8,14 @@ import android.widget.Button;
 
 import com.example.vaxdiscussions.R;
 
+/**
+ * List of discussions that a user can participate in but not until user logs in
+ */
 public class DiscussionsList extends AppCompatActivity {
 
+    /**
+     * Class attribute
+     */
     Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

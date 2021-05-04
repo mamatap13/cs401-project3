@@ -9,9 +9,20 @@ import android.widget.Button;
 
 import com.example.vaxdiscussions.R;
 
+/**
+ * Page allows a user to enter in a reply to a comment
+ */
 public class Reply_page extends AppCompatActivity {
 
+    /**
+     * Class attribute
+     */
     Button enter_reply;
+
+    /**
+     * Sets the reply button to navigate to previous page
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

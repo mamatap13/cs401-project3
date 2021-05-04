@@ -19,16 +19,24 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
-/*
-new users can set up an account by entering his/her first name, last name, username
-and password. Then a new users will be added to the firebase database.
+
+/**
+ * New users can set up an account by entering his/her first name, last name, username
+ * and password. Then a new users will be added to the firebase database.
  */
 public class NewUser extends AppCompatActivity {
+    /**
+     * Class attributes
+     */
     EditText fname,lname,email,password;
     Button save_profile;
     private FirebaseAuth mAuth;
     private FirebaseFirestore mfireStore;
 
+    /**
+     * Set new user fields
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

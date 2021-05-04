@@ -22,7 +22,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+/**
+ * Gives user information about vaccines
+ */
 public class Vaccine_info extends AppCompatActivity {
+    /**
+     * Class attribute
+     */
     TextView fullName,vacc_covid,vacc_flu,vac_meas,vac_small,vacc_chicken,vacc_hepaB,vacc_hepaA,vacc_diph;
     private FirebaseAuth mAuth;
     private FirebaseFirestore mfireStore;

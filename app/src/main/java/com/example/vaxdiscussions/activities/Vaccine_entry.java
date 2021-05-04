@@ -20,12 +20,15 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
-The Vaccine_entry class file is where the user will be able to enter the information
-on the vaccine such as the vaccine name, date, side effects, and other informations.
 
+/**
+ * The Vaccine_entry class file is where the user will be able to enter the information
+ * on the vaccine such as the vaccine name, date, side effects, and other informations.
  */
 public class Vaccine_entry extends AppCompatActivity {
+    /**
+     * Class Attributes
+     */
     EditText vac_name, vac_date,vac_des,vac_side_eff,vac_other;
     Button save_vacc;
     private FirebaseAuth mAuth; //getting the authorized user

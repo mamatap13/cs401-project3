@@ -9,7 +9,13 @@ import android.widget.EditText;
 
 import com.example.vaxdiscussions.R;
 
+/**
+ * User can navigate through each discussion and choose to reply
+ */
 public class Discussions_after_login extends AppCompatActivity {
+    /**
+     * class attribute
+     */
     EditText covid_19, childhood_vaccine,why_vaccine,side_effect,moderna_or_pfizer;
 
 

@@ -14,13 +14,17 @@ import com.example.vaxdiscussions.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-/*
-User is able to log into the system with the firebase Authorizations and setup a
-log in usrname and password.
- */
 
+/**
+ * User is able to log into the system with the firebase Authorizations and setup a
+ * log in username and password.
+ */
 public class LoginMenu extends AppCompatActivity {
 
+
+    /**
+     * Class attributes
+     */
     Button createNewUser;
 
     EditText email, password;
@@ -30,7 +34,10 @@ public class LoginMenu extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
 
-
+    /**
+     * Set all user id information, name, email, password, button login
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

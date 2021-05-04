@@ -9,12 +9,19 @@ import android.widget.Button;
 import com.example.vaxdiscussions.R;
 
 /**
- * Main Activity with
+ * Main Activity with 2 buttons, navigate to login page and discussions
  */
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Class attributes
+     */
     Button profileMenu, discussionlist;
 
+    /**
+     * Sets on click listeners for two buttons
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
