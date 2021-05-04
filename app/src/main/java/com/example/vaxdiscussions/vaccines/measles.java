@@ -19,10 +19,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
-/*
-The small pox class file is where the user is able to enter the information about measles vaccine
-such as the vaccine name, date recieved, descriptions of the vaccine, and other information. All
-of the textfield information will be saved onto the database.
+
+/**
+ * The measles class file is where the user is able to enter the information about measles vaccine
+ * such as the vaccine name, date recieved, descriptions of the vaccine, and other information. All
+ * of the textfield information will be saved onto the database.
  */
 public class measles extends AppCompatActivity {
     EditText vac_name, vac_date,vac_des,vac_side_eff,vac_other;
