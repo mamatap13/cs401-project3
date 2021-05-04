@@ -25,7 +25,7 @@ public class Discussions_after_login extends AppCompatActivity {
         covid_19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Discussions_after_login.this, LoginMenu.class); //change to covid_19mpage
+                Intent intent = new Intent(Discussions_after_login.this, CovidDiscussions.class); //change to covid_19mpage
                 startActivity(intent);
             }
         });
